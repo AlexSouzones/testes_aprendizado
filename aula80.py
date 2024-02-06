@@ -26,15 +26,19 @@ lista_de_listas_de_inteiros = [
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
 
-duplicados = list()
 
-for lista in lista_de_listas_de_inteiros:
+def lista_numeros(listas):
+  for lista in listas:
 
-  numeros = set()
+    numeros = set()
 
-  for n in lista:
-    if n in numeros:
-      duplicados.append(n)
-      print(n)
-      break
-    numeros.add(n)
+    for n in lista:
+
+      if n in numeros:
+
+        print(n)
+        break
+
+      numeros.add(n)
+
+lista_numeros(lista_de_listas_de_inteiros)
