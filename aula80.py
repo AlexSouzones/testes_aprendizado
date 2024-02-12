@@ -41,4 +41,7 @@ def lista_numeros(listas):
 
       numeros.add(n)
 
+    else:
+      print(-1)
+
 lista_numeros(lista_de_listas_de_inteiros)
