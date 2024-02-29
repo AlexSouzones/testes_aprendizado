@@ -27,21 +27,20 @@ lista_de_listas_de_inteiros = [
 ]
 
 
-def lista_numeros(listas):
+def pareado(listas):
   for lista in listas:
 
-    numeros = set()
+    nums = list()
 
-    for n in lista:
+    for num in lista:
 
-      if n in numeros:
-
-        print(n)
+      if num in nums:
+        print(num)
         break
 
-      numeros.add(n)
+      nums.append(num)
 
     else:
       print(-1)
 
-lista_numeros(lista_de_listas_de_inteiros)
+pareado(lista_de_listas_de_inteiros)
