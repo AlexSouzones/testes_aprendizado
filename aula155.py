@@ -28,8 +28,23 @@
 #     ...
 
 
-Foo = type('Foo', (object,), {})
-f = Foo()
-# print(isinstance(f, Foo))
-print(type(f))
-print(type(Foo))
+# Foo = type('Foo', (object,), {})
+# f = Foo()
+# # print(isinstance(f, Foo))
+# print(type(f))
+# print(type(Foo))
+
+class Pessoa:
+  def __new__(cls, *args, **kwargs):
+    print("MEU NEW")
+    instancia = super().__new__(cls)
+    return instancia
+
+
+  
+  def __init__(self, nome):
+    print("meu init")
+    self.nome = nome
+
+
+p1 = Pessoa("Alexandre")
