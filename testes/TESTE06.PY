@@ -6,4 +6,7 @@ def next_number():
 
 finidade = next_number()
 
-print(finidade)
+print(next(finidade))
+print(next(finidade))
+print(next(finidade))
+
