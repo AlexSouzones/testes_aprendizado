@@ -17,3 +17,8 @@
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 # - Os cabeçalhos HTTP (Content-Type, Accept)
 # - O corpo da mensagem (Pode estar em vazio em alguns casos)
+import requests
+
+url = "http://127.0.0.1:5500/aula_190_site/index.html"
+response = requests.get(url)
+print(response.history)
